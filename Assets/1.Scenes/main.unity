@@ -352,6 +352,7 @@ GameObject:
   - component: {fileID: 870127910}
   - component: {fileID: 870127909}
   - component: {fileID: 870127908}
+  - component: {fileID: 870127912}
   m_Layer: 0
   m_Name: Bulidings
   m_TagString: Untagged
@@ -449,6 +450,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &870127912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870127907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecf031e7e134e04282a774b408f01da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 0.2
+  meshRenderer: {fileID: 870127909}
 --- !u!1 &1683684264
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,6 +476,7 @@ GameObject:
   - component: {fileID: 1683684267}
   - component: {fileID: 1683684266}
   - component: {fileID: 1683684265}
+  - component: {fileID: 1683684269}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Untagged
@@ -558,6 +574,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1683684269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683684264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecf031e7e134e04282a774b408f01da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 0.65
+  meshRenderer: {fileID: 1683684266}
 --- !u!1 &2020406185
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,6 +600,7 @@ GameObject:
   - component: {fileID: 2020406188}
   - component: {fileID: 2020406187}
   - component: {fileID: 2020406186}
+  - component: {fileID: 2020406190}
   m_Layer: 0
   m_Name: Sky
   m_TagString: Untagged
@@ -667,6 +698,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2020406190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020406185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecf031e7e134e04282a774b408f01da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 0.1
+  meshRenderer: {fileID: 2020406187}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
