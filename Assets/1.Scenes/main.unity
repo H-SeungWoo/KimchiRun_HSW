@@ -479,7 +479,7 @@ GameObject:
   - component: {fileID: 1606530217}
   - component: {fileID: 1606530219}
   m_Layer: 0
-  m_Name: player
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -664,6 +664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 15
   PlayerRB: {fileID: 1606530218}
+  PlayerAnim: {fileID: 1606530214}
 --- !u!1 &1683684264
 GameObject:
   m_ObjectHideFlags: 0
