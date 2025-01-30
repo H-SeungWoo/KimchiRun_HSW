@@ -11,12 +11,13 @@ public class Spawner : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Invoke("Spawn", 1);
+        Invoke("Spawn",Random.Range(minSpawnDelay, maxSpawnDelay));
     }
 
     void Spawn()
     {
         var randomObject = gameObjects[Random.Range(0, gameObjects.Length)];
         Instantiate(randomObject, transform.position, Quaternion.identity);
-        Invoke("Spawn", Random.Range(minSpawnDelay, maxSpawnDelay));    }
+        Invoke("Spawn", Random.Range(minSpawnDelay, maxSpawnDelay));    
+    }
 }
