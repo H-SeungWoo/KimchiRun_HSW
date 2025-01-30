@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
 
     [Header("References")]
     public GameObject IntroUI;
+    public GameObject GameOverUI;
     public GameObject EnemySpawner;
     public GameObject FoodSpawner;
     public GameObject GoldSpawner;
@@ -37,6 +38,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         IntroUI.SetActive(true);
+        GameOverUI.SetActive(false);
         EnemySpawner.SetActive(false);
         FoodSpawner.SetActive(false);
         GoldSpawner.SetActive(false);
@@ -61,6 +63,7 @@ public class GameManager : MonoBehaviour
             EnemySpawner.SetActive(false);
             FoodSpawner.SetActive(false);
             GoldSpawner.SetActive(false);
+            GameOverUI.SetActive(true);
         }
 
         if(State == GameState.GameOver && Input.GetKeyDown(KeyCode.Space))
