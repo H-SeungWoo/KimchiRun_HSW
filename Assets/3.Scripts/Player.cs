@@ -21,16 +21,12 @@ public class Player : MonoBehaviour
 
     void Hit()
     {
-        lives--;
-        if(lives <= 0)
-        {
-            DiePlayer();
-        }
+        GameManager.instance.Lives--;
     }
 
     void Heal()
     {
-        lives = Mathf.Min(lives +1, 3);
+        GameManager.instance.Lives = Mathf.Min(GameManager.instance.Lives +1, 3);
     }
 
     void StartInvincible()
@@ -44,7 +40,7 @@ public class Player : MonoBehaviour
         isInvincible = false;
     }
 
-    void DiePlayer()
+    public void DiePlayer()
     {
         PlayerCollider.enabled = false;
         PlayerAnim.enabled = false;
